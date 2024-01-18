@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Dish Recipe</title>
+    <!-- Styles -->
+    <style>
+        body {
+            background-image: linear-gradient(90deg, rgb(165, 5, 189),rgb(239, 87, 203));
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            background-image: radial-gradient(circle at 52% 94%, rgba(169, 169, 169,0.04) 0%, rgba(169, 169, 169,0.04) 50%,rgba(199, 199, 199,0.04) 50%, rgba(199, 199, 199,0.04) 100%),radial-gradient(circle at 96% 98%, rgba(61, 61, 61,0.04) 0%, rgba(61, 61, 61,0.04) 50%,rgba(201, 201, 201,0.04) 50%, rgba(201, 201, 201,0.04) 100%),radial-gradient(circle at 93% 97%, rgba(227, 227, 227,0.04) 0%, rgba(227, 227, 227,0.04) 50%,rgba(145, 145, 145,0.04) 50%, rgba(145, 145, 145,0.04) 100%),radial-gradient(circle at 79% 52%, rgba(245, 245, 245,0.04) 0%, rgba(245, 245, 245,0.04) 50%,rgba(86, 86, 86,0.04) 50%, rgba(86, 86, 86,0.04) 100%),linear-gradient(90deg, rgb(210, 9, 198),rgb(25, 38, 118));
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: lightblue;
+            text-shadow: 0px 0px 10px lightblue,
+            0px 0px 20px darkblue,
+            0px 0px 40px darkblue,
+            0px 0px 60px darkblue,
+            0px 0px 80px darkblue;
+        }
+        h2,
+        h3 {
+            color: #faf9f9;
+            margin: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #ffffff;
+            margin: 10px;
+            padding: 10px;
+            font-size: .9rem;
+            font-family: "Lucida Handwriting", cursive;
+            font-weight: bold;
+        }
+
+        ul,
+        ol {
+            color: #ffffff;
+            margin-bottom: 15px;
+            margin: 10px;
+            padding: 10px;
+            font-size: .9rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img {
+            max-width: 200px;
+            height: 200px; /* Note: corrected the height property value */
+            border-radius: 8px;
+            /* Animation properties */
+            animation: slideRight 3s;
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(0); /* Initial position, no translation */
+            }
+
+            70% {
+                transform: translateX(70%); /* Slide to the right by 100% of the element's width */
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #000000;
+            color: white;
+            position: fixed;
+            width: 100%;
+            height: 10px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Page header -->
+        <h1>My Favorite Dish Recipe</h1>
+    </header>
+
+    <section>
+        <!-- Recipe section -->
+        <h2>Dinakdakan</h2>
+        <!-- Image for the dish -->
+        <div style="display: flex; justify-content: space-between;">
+            <div style="flex: 1; margin-right: 20px;">
+                <img src="Dinakdakan.avif" alt="Dinakdakan">
+            </div>
+            <!-- Video for the dish -->
+            <div style="flex: 1;">
+                <video width="100%" height="auto" controls>
+                    <source src="dinakdakan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <!-- Description of the dish -->
+        <p>
+            Knorr Pork Cube is used in Ilocano cuisine to make dinakdakan. Since one pork cube has the same flavor
+            as one kilogram of pork, this small addition enhances the meat's flavor even further.
+            With the exception of the pig parts, you probably already have most of the components
+            for our recipe in your regular cupboard. So don't hold it against us if your family members
+            start to obsess with Dinakdakan Ilocano!
+        </p>
+        <!-- List of ingredients -->
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>1 kg pig ears</li>
+            <li>1 kg pig face (maskara)</li>
+            <li>1/4 kg pig brain</li>
+            <li>1 pc medium red onion, sliced</li>
+            <li>6 pcs green chili pepper, sliced</li>
+            <li>1 pc Knorr Pork Cube</li>
+            <li>4 tbsp vinegar</li>
+            <li>to taste salt and pepper</li>
+            <li>8 cups water</li>
+        </ul>
+        <!-- Step-by-step instructions -->
+        <h3>Instructions:</h3>
+        <ol>
+            <li>step# 1 Pour 8 cups of water into a cooking pot. Let it boil, and then add salt and pepper. Add in the pig
+                ears and face, as well as the Knorr Pork Cube.</li>
+            <li>step# 2 Set the heat for the cooking pot to low and continue to boil for about 50 to 60 minutes or until
+                the meat is fork-tender. Strain and set aside.</li>
+            <li>step# 3 Boil the pig brains using a strainer and cook for about 10 minutes or until it turns white.
+                Remove the cooked pig brains from the heat and set aside.</li>
+            <li>step# 4 Heat the grill. Grill the pig ear and face for about 4 to 6 minutes per side. Wait until the pork
+                turns a bit crispy, but not burnt. Heat the grill. Grill the pig ear and face for about 4 to 6 minutes
+                per side. Wait until the pork turns a bit crispy, but not burnt.</li>
+            <li>step# 5 Remove the grilled pig parts from the grill. Let it cool down a bit, and then chop into bite-sized
+                pieces.</li>
+            <li>step# 6 In a mixing bowl, combine the pig brains and vinegar. Season with salt and pepper. Add the chili,
+                onion and salt, and then include the chopped pig parts in the mixture.</li>
+            <li>step# 7 Transfer to a serving plate, and enjoy.</li>
+        </ol>
+    </section>
+</body>
+</html>
